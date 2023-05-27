@@ -1,0 +1,31 @@
+{
+  "name": "express-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+  },
+  "repository": "git+https://github.com/georgeoancea/express-vue.git",
+  "author": "George Oancea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgeoancea/express-vue/issues"
+  },
+  "homepage": "https://github.com/georgeoancea/express-vue#readme",
+  "dependencies": {
+    "@types/pug": "^2.0.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.2.5",
+    "concurrently": "^8.0.1",
+    "typescript": "^5.0.4"
+  }
+}
