@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: antiquewhite;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main {
+  display: flex;
+  background-color: antiquewhite;
+  padding: 0;
+  align-content: space-between;
+  margin: 10px;
+}
+
+header {
+  margin: 0;
+  padding: .8em .5em;
+}
+
+.left {
+  display: block;
+  flex: 1;
+  
+  background-color: aliceblue;
+  border-radius: .1em;
+}
+.right {
+  display: block;
+  background-color: aliceblue;
+  flex: 1;
+  border-radius: .1em;
+}
+ul {
+  padding: .3em;
+  margin: 0;
+  display: block;
+}
+.todo {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;  
+  padding: 0;
+  display: block;
+  border-radius: .1em;
+  border: .1em solid #f3f4f5;
+  padding: 10px;
+
+}
+button {
+  margin: .15em;
+  border-radius: .1em;
+  border: none;
+  padding: .8em;
+  cursor: pointer;
+}
+.actions {
+  text-align: right;
+}
+form { 
+  padding: .5em;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  outline: none;;
+}
+textarea {
+  height: 8em;  
+  margin: .1em;
+  padding: .5em;
+}
+form.button {
+  margin: .1em;
+  flex: none;
+  display: inline-block;
+}

@@ -1,0 +1,29 @@
+html
+head
+  title= title
+  style
+    include style.css
+body
+  header= title 
+  main
+    main.left
+      ul
+        each todo, index in todos 
+          li.todo
+            p.todo-name= todo.name
+            div.actions
+              form(
+                action= '/delete/' + todo.id
+                method= 'post'
+              )
+                button  Remove
+
+    main.right
+      form#todo--form(action= '/', method ='post')
+        input#todoName(type='text', name= 'todoName')
+        div.actions 
+          input(
+            type= 'submit',
+            value= 'Add to do'
+            )
+
