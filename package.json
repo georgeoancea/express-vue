@@ -1,9 +1,15 @@
 {
   "name": "express-vue",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "workspaces": [  
+    "src/Presentation/Web/ToDo/spa"
+  ],
   "scripts": {
+    "serve-spa": "yarn workspace spa serve",
+    "build-spa": "yarn workspace spa build",
     "test": "test",
     "build": "npx tsc",
     "start": "node dist/index.js",
